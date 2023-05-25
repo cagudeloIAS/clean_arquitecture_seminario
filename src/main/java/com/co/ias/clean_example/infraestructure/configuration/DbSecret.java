@@ -1,10 +1,11 @@
 package com.co.ias.clean_example.infraestructure.configuration;
 
-import lombok.Data;
+import lombok.Builder;
 import lombok.Getter;
 
-@Data
+
 @Getter
+@Builder
 public class DbSecret {
 
     private final String url;

@@ -2,6 +2,7 @@ package com.co.ias.clean_example.domain.model.dto;
 
 import com.co.ias.clean_example.domain.model.Book;
 
+
 public class BookDTO {
 
     private String title;
@@ -20,5 +21,17 @@ public class BookDTO {
         this.title = title;
         this.author = author;
         this.isbn = isbn;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public String getIsbn() {
+        return isbn;
     }
 }
