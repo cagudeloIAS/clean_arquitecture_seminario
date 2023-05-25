@@ -15,8 +15,8 @@ public class UseCaseBeanConfig {
         return new BookUseCase(bookRepository);
     }
 
-    @Bean
+    /*@Bean
     public ClientUseCase clientUseCase(ClientRepository clientRepository) {
         return new ClientUseCase(clientRepository);
-    }
+    }*/
 }
