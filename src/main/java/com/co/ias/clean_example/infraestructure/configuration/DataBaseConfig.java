@@ -34,7 +34,7 @@ public class DataBaseConfig {
         return new HikariDataSource(hikariConfig);
     }
 
-    /*@Bean
+    @Bean
     @Profile("test")
     public DataSource dataSourceTest(DbSecret dbSecret){
         HikariConfig hikariConfig = new HikariConfig();
@@ -43,5 +43,5 @@ public class DataBaseConfig {
         hikariConfig.setPassword(dbSecret.getPassword());
         hikariConfig.setDriverClassName(dbSecret.getDriverClass());
         return new HikariDataSource(hikariConfig);
-    }*/
+    }
 }

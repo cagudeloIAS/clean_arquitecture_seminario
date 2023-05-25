@@ -1,6 +1,5 @@
 package com.co.ias.clean_example.infraestructure.entrypoint;
 
-import com.co.ias.clean_example.domain.model.Book;
 import com.co.ias.clean_example.domain.model.dto.BookDTO;
 import com.co.ias.clean_example.domain.usecase.BookUseCase;
 import lombok.AllArgsConstructor;
@@ -23,7 +22,7 @@ public class BookApiRest {
     private final BookUseCase bookUseCase;
 
     @PostMapping()
-    public ResponseEntity<BookDTO> createBook(@RequestBody BookDTO bookDTO)  {
+    public ResponseEntity<BookDTO> createBook(@RequestBody BookDTO bookDTO) {
         return new ResponseEntity<>(bookUseCase.createBook(bookDTO), HttpStatus.CREATED);
     }
 
